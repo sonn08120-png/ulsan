@@ -106,7 +106,7 @@ p {
 
 .korea_a::before {
      content: "";
-     background: url("/image/korea.png");
+     background: url("image/korea.png");
      width: 18px;
      height: 12px;
      margin-right: 10px;
@@ -211,7 +211,7 @@ p {
 
 .nav_warp>a:last-child::before {
      content: "";
-     background: url("/image/star.png") no-repeat;
+     background: url("image/star.png") no-repeat;
      width: 17px;
      height: 18px;
      display: inline-block;
@@ -223,7 +223,7 @@ p {
 /* 메인 */
 
 html {
-     background: url("/image/ulsan.png") no-repeat right -200px top 240px;
+     background: url("image/ulsan.png") no-repeat right -200px top 240px;
 }
 
 main {
@@ -390,7 +390,7 @@ input[type="text"]::placeholder {
 
 .service_user .service_active a::after {
      content: "";
-     background: url("/image/white_arrow.png") no-repeat;
+     background: url("image/white_arrow.png") no-repeat;
      width: 20px;
      height: 20px;
 }
@@ -424,7 +424,7 @@ input[type="text"]::placeholder {
 
 .service_warp li :hover::after {
      content: "";
-     background: url("/image/white_arrow.png") no-repeat;
+     background: url("image/white_arrow.png") no-repeat;
      width: 20px;
      height: 20px;
 }
@@ -572,7 +572,7 @@ input[type="text"]::placeholder {
 .banner_right {
      width: 540px;
      height: auto;
-     background: url("/image/kimdukyum.png") no-repeat right 50px;
+     background: url("image/kimdukyum.png") no-repeat right 50px;
      padding-top: 140px;
 }
 
@@ -763,7 +763,7 @@ input[type="text"]::placeholder {
 
 .notice_warp .notice_active a::after {
      content: "";
-     background: url("/image/wihte_arrow_big.png") no-repeat;
+     background: url("image/wihte_arrow_big.png") no-repeat;
      width: 36px;
      height: 36px;
 }
@@ -797,7 +797,7 @@ input[type="text"]::placeholder {
 
 .notice_warp li :hover::after {
      content: "";
-     background: url("/image/wihte_arrow_big.png") no-repeat;
+     background: url("image/wihte_arrow_big.png") no-repeat;
      width: 36px;
      height: 36px;
 }
