@@ -107,7 +107,7 @@ p {
 
 .korea_a::before {
     content: "";
-    background: url("/image/korea.png");
+    background: url("image/korea.png");
     width: 18px;
     height: 12px;
     margin-right: 10px;
@@ -212,7 +212,7 @@ p {
 
 .nav_warp > a:last-child::before {
     content: "";
-    background: url("/image/star.png") no-repeat;
+    background: url("image/star.png") no-repeat;
     width: 17px;
     height: 18px;
     display: inline-block;
@@ -294,7 +294,7 @@ p {
 .sub_warp a {
     width: 20px;
     height: 20px;
-    background: url("/image/sub_down_arrow.png") no-repeat;
+    background: url("image/sub_down_arrow.png") no-repeat;
     margin-top: 5px;
     margin-left: 100px;
 }
