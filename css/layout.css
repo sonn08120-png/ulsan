@@ -106,7 +106,7 @@ p {
 
 .korea_a::before {
      content: "";
-     background: url("/image/korea.png");
+     background: url("../image/korea.png");
      width: 18px;
      height: 12px;
      margin-right: 10px;
