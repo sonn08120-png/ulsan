@@ -1,5 +1,14 @@
 @font-face {
     font-family: 'S-CoreDream-4Regular';
+    src: url("font/SCDream3.woff2") format("woff2"),
+    url("font/SCDream3.woff") format("woff"),
+    url("font/SCDream3.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
     src: url("font/SCDream4.woff2") format("woff2"),
     url("font/SCDream4.woff") format("woff"),
     url("font/SCDream4.ttf") format("truetype");
