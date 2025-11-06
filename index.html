@@ -419,37 +419,53 @@
                     </div>
                 </div>
                 <script>
-                    var mainSlider = $('.banner_left_img > .slider').bxSlider({
-                        auto: true,
-                        pause: 5000,
-                        slideWidth: 820,
-                        pager: false,
-                        controls: true,
-                        autoControls: true,
-                        stopAutoOnClick: true, //prev, next 누르면 stop됨
-                        autoControlsCombine: true,
-                        autoControlsSelector: '#main-control .stop',
-                        prevSelector: '#main-control .prev',
-                        nextSelector: '#main-control .next',
-                        nextText: '<img src="image/banner_4.png">',
-                        prevText: '<img src="image/banner_2.png">',
-                        stopText: '<img src="image/banner_3.png">',
-                        startText: '<img src="image/banner_6.png">',
-                        infiniteLoop: true,
-                        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
-                            var current_index = parseInt(newIndex + 1);
-                            if (current_index > 8) {
-                                $('#main-counter .current').text(current_index);
-                            } else {
-                                $('#main-counter .current').text(current_index);
-                            };
+                    function initMainSlider() {
+                        var $ul = $('.banner_left_img > ul.slider');
+                        if (!$ul.length) return;
+
+                        // 총 개수 세팅
+                        $('#main-counter .total').text($ul.children('li').length);
+
+                        window.mainSlider = $ul.bxSlider({
+                            mode: 'horizontal',
+                            auto: true,
+                            pause: 5000,
+                            slideWidth: 820,
+                            pager: false,
+                            controls: true,
+                            autoControls: true,
+                            stopAutoOnClick: true,
+                            autoControlsCombine: true,
+                            autoControlsSelector: '#main-control .stop',
+                            prevSelector: '#main-control .prev',
+                            nextSelector: '#main-control .next',
+                            nextText: '<img src="image/banner_4.png">',
+                            prevText: '<img src="image/banner_2.png">',
+                            stopText: '<img src="image/banner_3.png">',
+                            startText: '<img src="image/banner_6.png">',
+                            infiniteLoop: true,
+
+                            // 💡 이미지 먼저 다 불러오고 계산하도록
+                            preloadImages: 'all',
+                            adaptiveHeight: true,
+                            useCSS: false,          // 일부 브라우저에서 초기 높이 0 방지
+
+                            onSliderLoad: function (i) {
+                                updateCounter(i);
+                            },
+                            onSlideAfter: function ($el, oldIdx, newIdx) {
+                                updateCounter(newIdx);
+                            }
+                        });
+
+                        function updateCounter(i) {
+                            $('#main-counter .current').text(i + 1);
                         }
-                    });
-                    if (mainSlider.getSlideCount() > 9) {
-                        $('#main-counter .total').text(mainSlider.getSlideCount());
-                    } else {
-                        $('#main-counter .total').text(mainSlider.getSlideCount());
-                    };</script>
+                    }
+
+                    // 👉 이미지까지 모두 로드된 뒤 실행
+                    $(window).on('load', initMainSlider);
+                </script>
             </div>
             <div class="banner_right">
                 <ul class="introduce">
