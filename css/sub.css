@@ -137,7 +137,7 @@ p {
     justify-content: space-between;
 }
 
-.nav_warp > a:last-child {
+.nav_warp>a:last-child {
     font-size: 18px;
     font-family: 'S-CoreDream-3Light';
     color: #fff;
@@ -151,7 +151,7 @@ p {
     line-height: 43px;
 }
 
-.nav_warp > a:last-child::before {
+.nav_warp>a:last-child::before {
     content: "";
     background: url("../image/star.png") no-repeat;
     width: 17px;
@@ -160,6 +160,146 @@ p {
     margin-right: 5px;
     position: relative;
     top: 1px;
+}
+
+.hover {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 196px;
+    width: 1440px;
+    background: #fff;
+    z-index: 90;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 18px 40px rgba(16, 24, 40, .08);
+    overflow: hidden;
+}
+
+/* 좌 타이틀 */
+.hover_title {
+    width: 270px;
+    background: #2BB3C5;
+    color: #fff;
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.hover_title p {
+    font-family: 'S-CoreDream-5Medium';
+    font-size: 30px;
+    color: #fff;
+}
+
+/* 우 컨텐츠 래퍼(표형) */
+.hover_panel {
+    display: none;
+    flex: 1;
+    background: #fff;
+}
+
+.hover_panel.active {
+    display: block;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.left {
+    background: #f6f6f6;
+    padding: 16px 18px;
+    white-space: nowrap;
+}
+
+.left a {
+    font-size: 16px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #333;
+}
+
+.right {
+    padding: 14px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    align-items: center;
+}
+
+.right a {
+    font-size: 15px;
+    font-family: 'S-CoreDream-4Regular';
+    position: relative;
+    padding-left: 14px;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.right a::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333;
+}
+
+.right>.sub {
+    font-family: 'S-CoreDream-6Bold';
+    font-size: 18px;
+}
+
+.right a:hover {
+    color: #01A7B7;
+    text-decoration: underline;
+}
+
+.nav_warp a:hover {
+    color: #01A7B7;
+}
+
+.list:before,
+.nav_warp a:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.list:before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.list:after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.list:hover:before,
+.list:hover:after,
+.list:focus:before,
+.list:focus:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
 }
 
 
@@ -214,10 +354,10 @@ p {
     width: 900px;
     display: flex;
     margin-left: 55px;
+    align-items: center;
 }
 
-.sub_warp li {
-    width: 290px;
+.sub_warp a {
     color: #fff;
     font-size: 20px;
     font-family: 'S-CoreDream-4Regular';
@@ -226,15 +366,18 @@ p {
     padding-right: 40px;
 }
 
-.sub_warp li::after {
-    content: "";
-    border-right: 1px solid rgba(255, 255, 255, 25%);
-    margin-left: 30px;
+.sub_warp span {
+    height: 40px;
+    width: 1px;
+    background: #41BDC9;
+    margin-right: 40px;
 }
 
-.sub_warp a {
+.sub_warp a:nth-child(1):after,
+.sub_warp a:nth-child(3):after {
     width: 20px;
     height: 20px;
+    content: "";
     background: url("../image/sub_down_arrow.png") no-repeat;
     margin-top: 5px;
     margin-left: 100px;

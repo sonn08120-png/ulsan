@@ -106,6 +106,21 @@ p {
      color: #FFF645;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav {
      width: 100%;
      height: 115px;
@@ -135,6 +150,7 @@ p {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     position: relative;
 }
 
 .nav_warp>a:last-child {
@@ -161,6 +177,161 @@ p {
      position: relative;
      top: 1px;
 }
+
+
+.hover {
+     display: none;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 196px;
+     width: 1440px;
+     background: #fff;
+     z-index: 90;
+     border-radius: 0 0 18px 18px;
+     box-shadow: 0 18px 40px rgba(16, 24, 40, .08);
+     overflow: hidden;
+}
+
+/* 좌 타이틀 */
+.hover_title {
+     width: 270px;
+     background: #2BB3C5;
+     color: #fff;
+     display: flex;
+     align-items: right;
+     justify-content: end;
+     padding: 50px;
+     box-sizing: border-box;
+}
+
+.hover_title p {
+     font-family: 'S-CoreDream-5Medium';
+     font-size: 30px;
+     color: #fff;
+}
+
+/* 우 컨텐츠 래퍼(표형) */
+.hover_panel {
+     display: none;
+     flex: 1;
+     background: #fff;
+}
+
+.hover_panel.active {
+     display: block;
+}
+
+.row {
+     display: grid;
+     grid-template-columns: 260px 1fr;
+     border-bottom: 1px solid #CDCDCD;
+}
+
+.row:last-child {
+     border-bottom: none;
+}
+
+.left {
+     background: #f6f6f6;
+     padding: 16px 18px;
+     white-space: nowrap;
+}
+
+.left a {
+     font-size: 16px;
+     font-family: 'S-CoreDream-4Regular';
+     color: #333;
+}
+
+.right {
+     padding: 14px 18px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px 18px;
+     align-items: center;
+}
+
+.right a {
+     font-size: 15px;
+     font-family: 'S-CoreDream-4Regular';
+     position: relative;
+     padding-left: 14px;
+     color: #333;
+     text-decoration: none;
+     line-height: 1.8;
+}
+
+.right a::before {
+     content: "·";
+     position: absolute;
+     left: 0;
+     top: 0;
+     color: #333;
+}
+
+.right > .sub {
+     font-family: 'S-CoreDream-6Bold';
+     font-size: 18px;
+}
+
+.right a:hover {
+     color: #01A7B7;
+     text-decoration: underline;
+}
+
+.nav_warp a:hover {
+     color: #01A7B7;
+}
+
+.list:before,
+.nav_warp a:after {
+     display: inline-block;
+     opacity: 0;
+     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+     -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+     transition: transform 0.3s, opacity 0.2s;
+}
+
+.list:before {
+     margin-right: 10px;
+     content: '[';
+     -webkit-transform: translateX(20px);
+     -moz-transform: translateX(20px);
+     transform: translateX(20px);
+}
+
+.list:after {
+     margin-left: 10px;
+     content: ']';
+     -webkit-transform: translateX(-20px);
+     -moz-transform: translateX(-20px);
+     transform: translateX(-20px);
+}
+
+.list:hover:before,
+.list:hover:after,
+.list:focus:before,
+.list:focus:after {
+     opacity: 1;
+     -webkit-transform: translateX(0px);
+     -moz-transform: translateX(0px);
+     transform: translateX(0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 메인 */
 
@@ -339,41 +510,6 @@ input[type="text"]::placeholder {
 
 
 
-.service_warp li :hover {
-     position: relative;
-     left: -60px;
-     font-size: 22px;
-     color: #fff;
-     font-family: 'S-CoreDream-5Medium';
-     width: 200px;
-     height: 50px;
-     background: #CF5E5E;
-     display: inline-block;
-     border-top-right-radius: 30px;
-     border-bottom-right-radius: 30px;
-     border-bottom-left-radius: 30px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     box-sizing: border-box;
-     padding-left: 40px;
-     padding-right: 30px;
-     border-bottom: none !important;
-     box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-     -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-     -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-}
-
-.service_warp li :hover::after {
-     content: "";
-     background: url("../image/white_arrow.png") no-repeat;
-     width: 20px;
-     height: 20px;
-}
-
-
-
-
 
 
 
@@ -429,6 +565,30 @@ input[type="text"]::placeholder {
      font-weight: 400;
      color: #fff;
 }
+
+
+
+.service_btn a:hover {
+     background: #01A7B7;
+     transition: transform 0.8s ease-in-out
+}
+
+.service_btn a:hover span {
+     color: #fff;
+}
+
+/* hover 시 이미지 변경 */
+.service_btn a.btn_pay:hover img { content: url("../image/ulsan_pay_ft.png"); }
+.service_btn a.btn_stat:hover img { content: url("../image/statistics_ft.png"); }
+.service_btn a.btn_donation:hover img { content: url("../image/donation_ft.png"); }
+.service_btn a.btn_res:hover img { content: url("../image/reservation_ft.png"); }
+.service_btn a.btn_traffic:hover img { content: url("../image/traffic_ft.png"); }
+.service_btn a.btn_damoa:hover img { content: url("../image/damoa_ulsan_ft.png"); }
+
+
+
+
+
 
 .banner {
      width: 1440px;
@@ -714,35 +874,7 @@ input[type="text"]::placeholder {
 
 
 
-.notice_warp li :hover {
-     position: relative;
-     left: -70px;
-     font-size: 26px;
-     color: #fff;
-     font-family: 'S-CoreDream-6Bold';
-     width: 245px;
-     height: 80px;
-     background: #007D8D;
-     display: inline-block;
-     border-radius: 0 40px 40px 40px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     box-sizing: border-box;
-     padding-left: 40px;
-     padding-right: 40px;
-     border-bottom: none !important;
-     box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-     -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-     -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
-}
 
-.notice_warp li :hover::after {
-     content: "";
-     background: url("../image/wihte_arrow_big.png") no-repeat;
-     width: 36px;
-     height: 36px;
-}
 
 
 
@@ -921,10 +1053,6 @@ input[type="text"]::placeholder {
      font-family: 'S-CoreDream-5Medium';
      text-align: center;
      padding-bottom: 20px;
-}
-
-.notice_slider_info :hover {
-     text-decoration: underline;
 }
 
 .notice_slider_info b {
@@ -1250,3 +1378,20 @@ input[type="text"]::placeholder {
 .footer_wrap p:last-child {
      padding-top: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
