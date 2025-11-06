@@ -535,6 +535,7 @@ input[type="text"]::placeholder {
      box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
      -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
      -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.09);
+     transition: all 0.2s ease;
 }
 
 .service_btn a:last-child {
@@ -569,8 +570,8 @@ input[type="text"]::placeholder {
 
 
 .service_btn a:hover {
-     background: #01A7B7;
-     transition: transform 0.8s ease-in-out
+     background-color: #01A7B7; 
+     transition: all 0.2s ease;
 }
 
 .service_btn a:hover span {
@@ -1159,12 +1160,14 @@ input[type="text"]::placeholder {
      border-radius: 20px;
      display: flex;
      align-items: center;
+     transition: all 0.2s ease;
 }
 
 .sns_link_icon :hover {
      background: #01A7B7;
      border-radius: 20px;
      color: #fff;
+     transition: all 0.2s ease;
 }
 
 .sns_link_icon p {
@@ -1256,6 +1259,7 @@ input[type="text"]::placeholder {
      display: flex;
      justify-content: center;
      align-items: center;
+     transition: background-color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .bottom_service_btn_top p,
@@ -1267,7 +1271,28 @@ input[type="text"]::placeholder {
      font-family: 'S-CoreDream-4Regular';
      display: flex;
      align-items: center;
+     max-width: 90px;
+     opacity: 1;
+     transition: opacity 0.3s ease, color 0.4s ease;
 }
+
+.bottom_service_btn_top a:hover p,
+.bottom_service_btn_bottom a:hover p {
+     color: #01A7B7;
+     font-family: 'S-CoreDream-5Medium';
+}
+
+.bottom_service_btn_top a img,
+.bottom_service_btn_bottom a img {
+     transition: transform 0.4s ease;
+}
+
+.bottom_service_btn_top a:hover img,
+.bottom_service_btn_bottom a:hover img {
+     transform: translateY(-2px) scale(1.1);
+}
+
+
 
 /* 푸터 */
 .footer_top {
