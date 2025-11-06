@@ -566,7 +566,7 @@
                             </div>
                             <div id="notice_control" class="notice_outside">
                                 <div class="notice_outside_wrap">
-                                    <span class="prev"></span> | </span><span class="next"></span>
+                                    <span class="prev"></span> | <span class="next"></span>
                                 </div>
                             </div>
                         </div>
@@ -619,7 +619,7 @@
                 <script>
                     var mainSlider = $('.notice_banner_img > .notice_slider').bxSlider({
                         auto: true,
-                        mainSlides: 3,
+                        minSlides: 3,
                         maxSlides: 4,
                         moveSlides: 1,
                         slideMargin: 15,
@@ -637,9 +637,9 @@
                         onSlideBefore: function ($slideElement, oldIndex, newIndex) {
                             var current_index = parseInt(newIndex + 1);
                             if (current_index > 8) {
-                                $('#notice_control .notice_current').text(current_index);
+                                $('#notice_counter .notice_current').text(current_index);
                             } else {
-                                $('#notice_control .notice_current').text(current_index);
+                                $('#notice_counter .notice_current').text(current_index);
                             };
                         }
                     });
