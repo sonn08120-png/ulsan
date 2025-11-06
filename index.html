@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>울산광역시시청</title>
+    <link rel="shortcut icon" href="u/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/hi.css">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
 </head>
@@ -39,15 +39,325 @@
         <div class="nav">
             <div class="nav_warp">
                 <h1><a href="index.html"><img src="image/ulsan_logo.png" alt=""></a></h1>
-                <a href="">민원</a>
-                <a href="">소통참여</a>
-                <a href="">정보공개</a>
-                <a href="">시정소식</a>
-                <a href="sub.html">울산소개</a>
-                <a href="sub2.html">분야별정보</a>
+                <a href="#" class="list" data-pane="민원">민원</a>
+                <a href="#" class="list" data-pane="소통참여">소통참여</a>
+                <a href="#" class="list" data-pane="정보공개">정보공개</a>
+                <a href="#" class="list" data-pane="시정소식">시정소식</a>
+                <a href="#" class="list" data-pane="울산소개">울산소개</a>
+                <a href="#" class="list" data-pane="분야별정보">분야별정보</a>
                 <a href="">즐겨찾기</a>
             </div>
         </div>
+        <div class="hover" id="hover">
+            <div class="hover_title">
+                <p id="hover_title">민원</p>
+            </div>
+
+            <div class="hover_panel active" data-pane="민원">
+                <div class="row">
+                    <div class="left"><a href="#">울산시에 바라다</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">민원상담신청</a></div>
+                    <div class="right">
+                        <a href="#">사전민원심사청구</a><a href="#">무료법률상담</a><a href="#">주택 피해·고충상담 지원센터</a><a href="#">국민콜110
+                            채팅상담</a><a href="#">방문민원 처리공개</a><a href="#">120 해울이콜센터</a><a href="#">원스톱 기업지원창구</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">민원안내</a></div>
+                    <div class="right">
+                        <a href="#">민원사무편람</a><a href="#">민원서식받기</a><a href="#">정부24</a><a href="#">무인민원발급기</a><a
+                            href="#">민원후견인제</a><a href="#">여권발급안내</a><a href="#">온라인 출생신고 안내</a><a href="#">팩스발송 결과
+                            조회</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">자치경찰위원회</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">고충민원</a></div>
+                    <div class="right">
+                        <a href="#">고충민원 처리 안내</a><a href="#">고충민원 처리절차</a><a href="#">고충민원 신청 및 결과</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">인권센터 (인권침해 신고)</a></div>
+                    <div class="right">
+                        <a href="#">인권센터 소개</a><a href="#">상담·처리 절차</a><a href="#">상담 신청</a><a href="#">결정례</a><a
+                            href="#">인권 자료실</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">청원신청</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">민원처리FAQ</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">행정서비스헌장</a></div>
+                    <div class="right">
+                        <a href="#">개념 및 추진배경</a><a href="#">공통 이행기준</a><a href="#">부서별 행정서비스헌장</a><a
+                            href="#">고객만족도조사</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">신고센터</a></div>
+                    <div class="right">
+                        <a href="#">부패·공익 신고</a><a href="#">공무원친절/불친절 신고</a><a href="#">공직비리 신고</a><a href="#">소극행정
+                            신고센터</a><a href="#">청탁금지법 신고센터</a><a href="#">예산낭비신고센터</a><a href="#">환경신문고</a><a
+                            href="#">규제개혁 신고센터</a>
+                        <a href="#">규제입증요청</a><a href="#">민생규제 개선센터</a><a href="#">국가유산 부실수리 신고 등</a><a href="#">부동산
+                            불법행위 통합 신고센터</a><a href="#">부동산 불법거래 신고</a><a href="#">시 사업장 안전보건신고</a><a
+                            href="#">안전신문고</a><a href="#">복지·보조금부정신고</a><a href="#">식품안전소비자신고</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hover_panel" data-pane="소통참여">
+                <div class="row">
+                    <div class="left"><a href="#">칭찬합시다</a></div>
+                    <div class="right"><a href="#">칭찬 등록</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">칭찬합시다</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">주제가 및 응원가 가사 공모</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">주민참여예산</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">주민e직접</a></div>
+                </div>
+            </div>
+
+            <div class="hover_panel" data-pane="정보공개">
+                <div class="row">
+                    <div class="left"><a href="#">행정정보공개</a></div>
+                    <div class="right">
+                        <a href="#">정보공개제도</a><a href="#">사전정보공표</a><a href="#">정보목록</a>
+                        <a href="#">청구 비용</a><a href="#">정책실명제</a><a href="#">결재문서공개</a><a href="#">연구용역 결과</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">업무추진비</a></div>
+                    <div class="right"><a href="#">시장</a><a href="#">경제부시장</a><a href="#">실·국장</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">위원회 운영정보</a></div>
+                    <div class="right"><a href="#">위원회 설치현황</a><a href="#">위원회 개최결과</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">백서</a></div>
+                    <div class="right"><a href="#">시정백서</a><a href="#">승격백서</a><a href="#">광역시 승격 10주년</a><a
+                            href="#">환경백서</a><a href="#">태화강 국가정원 백서</a></div>
+                </div>
+            </div>
+
+            <div class="hover_panel" data-pane="시정소식">
+                <div class="row">
+                    <div class="left"><a href="#">새소식</a></div>
+                    <div class="right">
+                        <a href="#">정보공개제도</a><a href="#">사전정보공표</a><a href="#">정보목록</a>
+                        <a href="#">청구 비용</a><a href="#">정책실명제</a><a href="#">결재문서공개</a><a href="#">연구용역 결과</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">고시공고 (입법예고 포함)</a></div>
+                    <div class="right"><a href="#">게시판 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">보도 / 해명</a></div>
+                    <div class="right"><a href="#">보도자료</a><a href="#">해명자료</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">공보</a></div>
+                    <div class="right"><a href="#">시정홍보영상</a><a href="#">시정뉴스</a><a href="#">ODA 사진전</a><a
+                            href="#">헬로울산</a><a href="#">시정소식지</a><a
+                            href="#">카드뉴스</a><a href="#">이장·통장회의 홍보자료</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">홍보</a></div>
+                    <div class="right"><a href="#">시정백서</a><a href="#">승격백서</a><a href="#">광역시 승격 10주년</a><a
+                            href="#">환경백서</a><a href="#">태화강 국가정원 백서</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">주·월간 업무계획</a></div>
+                    <div class="right"><a href="#">업무계획 바로가기</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">시험정보</a></div>
+                    <div class="right"><a href="#">시험공고</a><a href="#">시험장소공고</a><a href="#">합격자공고</a><a
+                            href="#">경쟁률</a><a href="#">인터넷 원서접수/성적조회</a><a href="#">Q&A게시판</a><a href="#">타기관 시험정보</a></div>
+                </div>
+            </div>
+
+            <div class="hover_panel" data-pane="울산소개">
+                <div class="row">
+                    <div class="left"><a href="#">울산의 비전</a></div>
+                    <div class="right">
+                        <a href="#">시정비전</a><a href="#">주요업무계획</a><a href="#">울산시청</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">울산의 현황</a></div>
+                    <div class="right"><a href="sub.html" class="sub">자연여건</a><a href="#">행정구역</a><a href="#">행정지도</a><a href="#">연혁</a><a
+                            href="#">울산광역시사(2002)</a><a href="#">울산을 한권에 담다(2017)</a><a
+                            href="#">울산의 기록들</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">시의상징</a></div>
+                    <div class="right"><a href="#">심벌마크</a><a href="#">브랜드슬로건</a>
+                        <a href="#">캐릭터</a><a href="sub2.html" class="sub">시목·시화·시조</a>
+                        <a href="#">울산시가</a><a href="#">시민헌장</a>
+                        <a href="#">울산색</a><a href="#">울산문양</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">시청안내</a></div>
+                    <div class="right"><a href="#">행정조직도</a><a href="#">전화·팩스번호안내 (대표052-120)</a><a href="#">직원검색</a><a
+                            href="#">청사안내</a><a href="#">견학신청</a><a
+                            href="#">찾아오시는길</a><a href="#">시민홀 대관</a></div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">이용안내</a></div>
+                    <div class="right"><a href="#">개인정보처리방침</a><a href="#">영상정보처리기기 운영·관리방침</a><a href="#">저작권보호 정책</a><a
+                            href="#">웹 접근성 품질인증</a><a href="#">파일뷰어 다운로드</a><a href="#">파일뷰어 다운로드</a><a href="#">관련누리집</a>
+                            <a href="#">이용약관</a><a href="#">사이트맵</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="hover_panel" data-pane="분야별정보">
+                <div class="row">
+                    <div class="left"><a href="#">안전</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">안전정책</a><a href="#">재난</a><a href="#">사회재난산업안전</a><a href="#">민생사법경찰</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">복지</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">출산보육</a><a href="#">아동복지</a><a href="#">기초생활보장</a>
+                        <a href="#">보훈</a><a href="#">노인복지</a><a href="#">장애인복지</a><a href="#">여성복지</a>
+                        <a href="#">청소년육성</a><a href="#">외국인/다문화지원</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">보건/건강</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">코로나19</a><a href="#">보건정책</a><a href="#">건강도시</a>
+                        <a href="#">감염병관리</a><a href="#">위생정보</a><a href="#">의료정보</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">문화/관광</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">문화예술</a><a href="#">울산문화24</a><a href="#">울산관광</a>
+                        <a href="#">왔어울산</a><a href="#">체육지원</a><a href="#">민간·공동체정원</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">경제/일자리</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">지역경제/노동</a><a href="#">일자리/창업</a><a href="#">투자유치/통상교류</a>
+                        <a href="#">중소벤처기업</a><a href="#">사회적경제</a><a href="#">농축산</a>
+                        <a href="#">수산진흥</a><a href="#">혁신산업</a><a href="#">에너지산업</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">환경/녹지</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">환경정책</a><a href="#">환경보전</a><a href="#">하수관리</a>
+                        <a href="#">지원순환</a><a href="#">맑은물정책</a><a href="#">녹지공원</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">교통/도시/산업단지</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">교통기획</a><a href="#">버스택시</a><a href="#">광역교통</a>
+                        <a href="#">도시계획</a><a href="#">도시균형개발</a><a href="#">혁신도시</a><a href="#">산업단지</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">건설/주택/토지</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">건설도로</a><a href="#">건축정책</a><a href="#">주택허가</a>
+                        <a href="#">도시경관</a><a href="#">토지정보</a><a href="#">스마트도시</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">세금/제정</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">재정</a><a href="#">예산</a><a href="#">세금</a>
+                        <a href="#">공유재산</a><a href="#">전국 부동산 종합정보</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left"><a href="#">행정</a></div>
+                    <div class="right">
+                        <a href="#">새소식</a><a href="#">홍보</a><a href="#">감사</a><a href="#">기획</a>
+                        <a href="#">행정지원</a><a href="#">법무</a><a href="#">규제개혁</a>
+                        <a href="#">통계</a><a href="#">인재교육</a><a href="#">전입세대 지원</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const hover = document.getElementById('hover');
+            const hoverTitle = document.getElementById('hover_title');
+
+            // 열기/스위칭
+            function openPane(key, trigger) {
+                // 상단 활성 표시
+                document.querySelectorAll('.nav_warp a').forEach(a => a.classList.toggle('is-active', a === trigger));
+
+                // 타이틀 변경
+                hoverTitle.textContent = key;
+
+                // 패널 스위칭
+                document.querySelectorAll('.hover_panel').forEach(p => {
+                    p.classList.toggle('active', p.dataset.pane === key);
+                });
+
+                // 표시
+                hover.style.display = 'flex';
+            }
+
+            // 상단 메뉴 이벤트
+            document.querySelectorAll('.nav_warp a[data-pane]').forEach(a => {
+                const key = a.getAttribute('data-pane');
+                const open = (e) => { e.preventDefault(); openPane(key, a); };
+                a.addEventListener('mouseenter', open); // 데스크톱
+                a.addEventListener('focus', open);      // 키보드
+                // a.addEventListener('click', open);      // 모바일 탭
+            });
+
+            // 영역 벗어나면 닫기
+            let timer;
+            [document.querySelector('.nav'), hover].forEach(el => {
+                el.addEventListener('mouseenter', () => clearTimeout(timer));
+                el.addEventListener('mouseleave', () => {
+                    clearTimeout(timer);
+                    timer = setTimeout(() => {
+                        hover.style.display = 'none';
+                        document.querySelectorAll('.nav_warp a').forEach(a => a.classList.remove('is-active'));
+                    }, 120);
+                });
+            });
+
+            // ESC 닫기
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') { hover.style.display = 'none'; document.querySelectorAll('.nav_warp a').forEach(a => a.classList.remove('is-active')); }
+            });
+        </script>
     </header>
     <main>
         <div class="main_bg"></div>
@@ -64,7 +374,6 @@
             <li>#소비쿠폰</li>
         </ul>
         <div class="service">
-            <!-- <p>이용자별 서비스</p> -->
             <div class="service_user">
                 <ul class="service_warp">
                     <li class="service_active"><a href="">울산시민</a></li>
@@ -72,12 +381,12 @@
                     <li><a href="">관광객</a></li>
                 </ul>
                 <div class="service_btn">
-                    <a href=""><img src="image/ulsan_pay.png"><span>울산페이</span></a>
-                    <a href=""><img src="image/statistics.png"><span>통계</span></a>
-                    <a href=""><img src="image/donation.png"><span>기부제</span></a>
-                    <a href=""><img src="image/reservation.png"><span>시설예약</span></a>
-                    <a href=""><img src="image/traffic.png"><span>교통관리</span></a>
-                    <a href=""><img src="image/damoa_ulsan.png"><span>다모와울산</span></a>
+                    <a href="" class="btn_pay"><img src="image/ulsan_pay.png"><span>울산페이</span></a>
+                    <a href="" class="btn_stat"><img src="image/statistics.png"><span>통계</span></a>
+                    <a href="" class="btn_donation"><img src="image/donation.png"><span>기부제</span></a>
+                    <a href="" class="btn_res"><img src="image/reservation.png"><span>시설예약</span></a>
+                    <a href="" class="btn_traffic"><img src="image/traffic.png"><span>교통관리</span></a>
+                    <a href="" class="btn_damoa"><img src="image/damoa_ulsan.png"><span>다모와울산</span></a>
                     <a href=""><span><b>더보기</b></span><img src="image/down_arrow.png"></a>
                 </div>
             </div>
@@ -262,10 +571,18 @@
                             </div>
                         </div>
                         <div class="sns_link_icon">
-                            <a href="" class="sns_active"><img src="image/blog_ft.png"><span></span><p>Blog</p></a>
-                            <a href=""><img src="image/facebook_ft.png"><span></span><p>FaceBook</p></a>
-                            <a href=""><img src="image/instagram_ft.png"><span></span><p>Instagram</p></a>
-                            <a href=""><img src="image/youtube_ft.png"><span></span><p>Youtube</p></a>
+                            <a href="" class="sns_active"><img src="image/blog_ft.png"><span></span>
+                                <p>Blog</p>
+                            </a>
+                            <a href=""><img src="image/facebook_ft.png"><span></span>
+                                <p>FaceBook</p>
+                            </a>
+                            <a href=""><img src="image/instagram_ft.png"><span></span>
+                                <p>Instagram</p>
+                            </a>
+                            <a href=""><img src="image/youtube_ft.png"><span></span>
+                                <p>Youtube</p>
+                            </a>
                         </div>
                     </div>
                     <div class="notice_slider">
@@ -332,7 +649,7 @@
                         $('#notice_counter .total').text(mainSlider.getSlideCount());
                     };
                 </script>
-        </div>
+            </div>
         </div>
         <div class="bottom_service">
             <div class="bottom_service_warp">
