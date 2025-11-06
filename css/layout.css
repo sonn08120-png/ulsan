@@ -659,6 +659,10 @@ input[type="text"]::placeholder {
      gap: 21px;
 }
 
+.stop {
+     width: 7px;
+}
+
 .banner_left_text li {
      font-size: 16px;
      color: #fff;
