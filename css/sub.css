@@ -176,7 +176,6 @@ p {
     overflow: hidden;
 }
 
-/* 좌 타이틀 */
 .hover_title {
     width: 270px;
     background: #2BB3C5;
@@ -194,7 +193,6 @@ p {
     color: #fff;
 }
 
-/* 우 컨텐츠 래퍼(표형) */
 .hover_panel {
     display: none;
     flex: 1;
@@ -482,135 +480,16 @@ p {
     position: relative;
 }
 
-.main_3_img1 img {
-    border-radius: 30px 30px 170px 30px;
-    box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -webkit-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -moz-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-}
-
-.main_3_img1_bottom {
-    position: absolute;
-    width: 1310px;
-    height: 320px;
-    background: #F3F4F8;
-    right: 0;
-    top: 20%;
-    border-radius: 0px 40px 40px 170px;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main_3_img1_bottom p {
-    margin-left: 460px;
-    font-family: 'S-CoreDream-6Bold';
-    font-size: 28px;
-    margin-bottom: 35px;
-}
-
-.main_3_img1_bottom li {
-    width: 770px;
-    margin-left: 480px;
-    list-style: disc;
-    font-size: 15px;
-    font-family: 'S-CoreDream-4Regular';
-    margin-top: 15px;
-}
-
-
-.main_4_img1 {
-    margin-top: 150px;
-    position: relative;
-}
-
-.main_4_img1 img {
-    border-radius: 30px 30px 170px 30px;
-    box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -webkit-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -moz-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-}
-
-.main_4_img1_bottom {
-    position: absolute;
-    width: 1310px;
-    height: 320px;
-    background: #F3F4F8;
-    right: 0;
-    top: 20%;
-    border-radius: 0px 40px 40px 170px;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main_4_img1_bottom p {
-    margin-left: 460px;
-    font-family: 'S-CoreDream-6Bold';
-    font-size: 28px;
-    margin-bottom: 35px;
-}
-
-.main_4_img1_bottom li {
-    width: 770px;
-    margin-left: 480px;
-    list-style: disc;
-    font-size: 15px;
-    font-family: 'S-CoreDream-4Regular';
-    margin-top: 15px;
-}
-
-
-.main_5_img1 {
-    margin-top: 150px;
-    position: relative;
-}
-
-.main_5_img1 img {
-    border-radius: 30px 30px 170px 30px;
-    box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -webkit-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-    -moz-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
-}
-
-.main_5_img1_bottom {
-    position: absolute;
-    width: 1310px;
-    height: 320px;
-    background: #F3F4F8;
-    right: 0;
-    top: 20%;
-    border-radius: 0px 40px 40px 170px;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main_5_img1_bottom p {
-    margin-left: 460px;
-    font-family: 'S-CoreDream-6Bold';
-    font-size: 28px;
-    margin-bottom: 35px;
-}
-
-.main_5_img1_bottom li {
-    width: 770px;
-    margin-left: 480px;
-    list-style: disc;
-    font-size: 15px;
-    font-family: 'S-CoreDream-4Regular';
-    margin-top: 15px;
-}
-
-
+.main_4_img1,
+.main_5_img1,
 .main_6_img1 {
     margin-top: 150px;
     position: relative;
 }
 
+.main_3_img1 img,
+.main_4_img1 img,
+.main_5_img1 img,
 .main_6_img1 img {
     border-radius: 30px 30px 170px 30px;
     box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
@@ -618,6 +497,9 @@ p {
     -moz-box-shadow: 13px 13px 16px -2px rgba(0, 0, 0, 0.09);
 }
 
+.main_3_img1_bottom,
+.main_4_img1_bottom,
+.main_5_img1_bottom,
 .main_6_img1_bottom {
     position: absolute;
     width: 1310px;
@@ -632,6 +514,9 @@ p {
     justify-content: center;
 }
 
+.main_3_img1_bottom p,
+.main_4_img1_bottom p,
+.main_5_img1_bottom p,
 .main_6_img1_bottom p {
     margin-left: 460px;
     font-family: 'S-CoreDream-6Bold';
@@ -639,6 +524,9 @@ p {
     margin-bottom: 35px;
 }
 
+.main_3_img1_bottom li,
+.main_4_img1_bottom li,
+.main_5_img1_bottom li,
 .main_6_img1_bottom li {
     width: 770px;
     margin-left: 480px;
@@ -646,7 +534,9 @@ p {
     font-size: 15px;
     font-family: 'S-CoreDream-4Regular';
     margin-top: 15px;
+    line-height: 20px;
 }
+
 
 
 /* 푸터 */

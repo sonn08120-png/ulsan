@@ -175,7 +175,6 @@ p {
     overflow: hidden;
 }
 
-/* 좌 타이틀 */
 .hover_title {
     width: 270px;
     background: #2BB3C5;
@@ -193,7 +192,6 @@ p {
     color: #fff;
 }
 
-/* 우 컨텐츠 래퍼(표형) */
 .hover_panel {
     display: none;
     flex: 1;

@@ -145,7 +145,7 @@ p {
 }
 
 .nav_warp a {
-     font-size: 23px;
+     font-size: 20px;
      font-family: 'S-CoreDream-5Medium';
      display: flex;
      align-items: center;
@@ -154,17 +154,17 @@ p {
 }
 
 .nav_warp>a:last-child {
-     font-size: 18px;
+     font-size: 17px;
      font-family: 'S-CoreDream-3Light';
      color: #fff;
      background: #01A7B7;
      width: 130px;
      height: 40px;
-     gap: 10px;
      border-radius: 50px;
      display: inline-block;
      text-align: center;
-     line-height: 43px;
+     line-height: 42px;
+     justify-content: center;
 }
 
 .nav_warp>a:last-child::before {
@@ -173,7 +173,7 @@ p {
      width: 17px;
      height: 18px;
      display: inline-block;
-     margin-right: 5px;
+     margin-right: 8px;
      position: relative;
      top: 1px;
 }
@@ -193,7 +193,6 @@ p {
      overflow: hidden;
 }
 
-/* 좌 타이틀 */
 .hover_title {
      width: 270px;
      background: #2BB3C5;
@@ -211,7 +210,6 @@ p {
      color: #fff;
 }
 
-/* 우 컨텐츠 래퍼(표형) */
 .hover_panel {
      display: none;
      flex: 1;
@@ -556,13 +554,13 @@ input[type="text"]::placeholder {
 }
 
 .service_btn span {
-     font-size: 16px;
+     font-size: 15px;
      font-family: 'S-CoreDream-4Regular';
      color: #333;
 }
 
 .service_btn b {
-     font-size: 18px;
+     font-size: 16px;
      font-weight: 400;
      color: #fff;
 }
@@ -680,7 +678,7 @@ input[type="text"]::placeholder {
      width: 540px;
      height: auto;
      background: url("../image/kimdukyum.png") no-repeat right 50px;
-     padding-top: 140px;
+     padding-top: 133px;
 }
 
 .introduce {
@@ -1284,6 +1282,7 @@ input[type="text"]::placeholder {
 .bottom_service_btn_bottom a:hover p {
      color: #01A7B7;
      font-family: 'S-CoreDream-5Medium';
+     transition: opacity 0.3s ease, color 0.4s ease;
 }
 
 .bottom_service_btn_top a img,
