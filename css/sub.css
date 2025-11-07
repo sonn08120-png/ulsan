@@ -130,7 +130,7 @@ p {
 }
 
 .nav_warp a {
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'S-CoreDream-5Medium';
     display: flex;
     align-items: center;
@@ -318,8 +318,10 @@ p {
 .sub_visual p {
     position: absolute;
     width: 100%;
-    top: 35%;
-    font-size: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
     letter-spacing: 10px;
     font-family: 'S-CoreDream-8Heavy';
     color: #fff;
@@ -359,6 +361,15 @@ p {
     color: #fff;
     font-size: 20px;
     font-family: 'S-CoreDream-4Regular';
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.sub_warp b {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'S-CoreDream-6Bold';
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
@@ -534,7 +545,7 @@ p {
     font-size: 15px;
     font-family: 'S-CoreDream-4Regular';
     margin-top: 15px;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 
