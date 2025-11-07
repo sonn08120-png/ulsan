@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>울산광역시 메인</title>
+    <title>울산광역시시청</title>
     <link rel="shortcut icon" href="u/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/hi.css">
@@ -314,33 +314,25 @@
             const hover = document.getElementById('hover');
             const hoverTitle = document.getElementById('hover_title');
 
-            // 열기/스위칭
             function openPane(key, trigger) {
-                // 상단 활성 표시
                 document.querySelectorAll('.nav_warp a').forEach(a => a.classList.toggle('is-active', a === trigger));
 
-                // 타이틀 변경
                 hoverTitle.textContent = key;
 
-                // 패널 스위칭
                 document.querySelectorAll('.hover_panel').forEach(p => {
                     p.classList.toggle('active', p.dataset.pane === key);
                 });
 
-                // 표시
                 hover.style.display = 'flex';
             }
 
-            // 상단 메뉴 이벤트
             document.querySelectorAll('.nav_warp a[data-pane]').forEach(a => {
                 const key = a.getAttribute('data-pane');
                 const open = (e) => { e.preventDefault(); openPane(key, a); };
-                a.addEventListener('mouseenter', open); // 데스크톱
-                a.addEventListener('focus', open);      // 키보드
-                // a.addEventListener('click', open);      // 모바일 탭
+                a.addEventListener('mouseenter', open);
+                a.addEventListener('focus', open);
             });
 
-            // 영역 벗어나면 닫기
             let timer;
             [document.querySelector('.nav'), hover].forEach(el => {
                 el.addEventListener('mouseenter', () => clearTimeout(timer));
@@ -353,7 +345,6 @@
                 });
             });
 
-            // ESC 닫기
             document.addEventListener('keydown', e => {
                 if (e.key === 'Escape') { hover.style.display = 'none'; document.querySelectorAll('.nav_warp a').forEach(a => a.classList.remove('is-active')); }
             });
@@ -423,7 +414,6 @@
                         var $ul = $('.banner_left_img > ul.slider');
                         if (!$ul.length) return;
 
-                        // 총 개수 세팅
                         $('#main-counter .total').text($ul.children('li').length);
 
                         window.mainSlider = $ul.bxSlider({
@@ -445,10 +435,9 @@
                             startText: '<img src="image/banner_6.png">',
                             infiniteLoop: true,
 
-                            // 💡 이미지 먼저 다 불러오고 계산하도록
                             preloadImages: 'all',
                             adaptiveHeight: true,
-                            useCSS: false,          // 일부 브라우저에서 초기 높이 0 방지
+                            useCSS: false,
 
                             onSliderLoad: function (i) {
                                 updateCounter(i);
@@ -463,7 +452,6 @@
                         }
                     }
 
-                    // 👉 이미지까지 모두 로드된 뒤 실행
                     $(window).on('load', initMainSlider);
                 </script>
             </div>
